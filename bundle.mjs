@@ -93374,4 +93374,1002 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     DAe = "_1bvgniiq";
   const MAe = ({
     isVoice: e,
-    withIc
+    withIcon: t,
+    image: n,
+    isOpen: a,
+    label: s,
+    onClick: l,
+    isLoading: d,
+    isDisabled: f,
+  }) => {
+    const h = !n && e,
+      g = ue.jsx("div", {
+        className: DAe,
+        children: ue.jsx(fI, {
+          className: LAe,
+          variant: "light",
+          size: "large",
+        }),
+      });
+    return ue.jsxs(yu, {
+      onClick: l,
+      className: Xt(
+        OAe({ isOpen: a, noImage: !t, isDisabled: f, isLoading: d }),
+        Zr.LAUNCHER
+      ),
+      children: [
+        ue.jsxs("div", {
+          className: xAe({ isOpen: a, noImage: !t }),
+          children: [
+            t &&
+              ue.jsxs(ue.Fragment, {
+                children: [
+                  d && g,
+                  h &&
+                    ue.jsx(AB, {
+                      className: Xt(TB({ isOpen: a })),
+                      fill: "white",
+                    }),
+                  !h &&
+                    ue.jsx("img", {
+                      src: n ?? yB,
+                      className: Xt(TB({ isOpen: a })),
+                      alt: "open chat",
+                    }),
+                ],
+              }),
+            ue.jsx(EB, { className: Xt(kAe({ isOpen: a })) }),
+          ],
+        }),
+        d && !t && g,
+        ue.jsx("div", { className: IAe, children: s }),
+      ],
+    });
+  };
+  var PAe = 48,
+    FAe = 40,
+    UAe = "ojsd7i0",
+    BAe = tn({
+      defaultClassName: "ojsd7i1 _1ytjivy0 _17qb7gk0 _1ytjivy5",
+      variantClassNames: {
+        isOpen: { true: "ojsd7i2" },
+        isDisabled: { true: "ojsd7i3" },
+        isLoading: { true: "ojsd7i4" },
+      },
+      defaultVariants: {},
+      compoundVariants: [],
+    }),
+    HAe = "ojsd7i5",
+    $Ae = tn({
+      defaultClassName: "ojsd7i6",
+      variantClassNames: {
+        isOpen: { true: "ojsd7i7", false: "ojsd7i8" },
+        withIcon: { false: "ojsd7i9" },
+      },
+      defaultVariants: {},
+      compoundVariants: [[{ withIcon: !1, isOpen: !1 }, "ojsd7ia"]],
+    });
+  tn({
+    defaultClassName: "ojsd7ib",
+    variantClassNames: { isOpen: { true: "ojsd7ic", false: "ojsd7id" } },
+    defaultVariants: {},
+    compoundVariants: [],
+  });
+  var jAe = tn({
+      defaultClassName: "ojsd7ie",
+      variantClassNames: { withLabel: { true: "ojsd7if" } },
+      defaultVariants: {},
+      compoundVariants: [],
+    }),
+    SB = tn({
+      defaultClassName: "ojsd7ig",
+      variantClassNames: { isOpen: { true: "ojsd7ih", false: "ojsd7ii" } },
+      defaultVariants: {},
+      compoundVariants: [],
+    }),
+    zAe = tn({
+      defaultClassName: "ojsd7il",
+      variantClassNames: {
+        isOpen: { true: "ojsd7im", false: "ojsd7in" },
+        isLoading: { true: "ojsd7io" },
+      },
+      defaultVariants: {},
+      compoundVariants: [
+        [{ isOpen: !0, isLoading: !1 }, "ojsd7ip"],
+        [{ isOpen: !1, isLoading: !1 }, "ojsd7iq"],
+        [{ isLoading: !0, isOpen: !0 }, "ojsd7ir"],
+        [{ isLoading: !0, isOpen: !1 }, "ojsd7is"],
+      ],
+    }),
+    _B = tn({
+      defaultClassName: "ojsd7it",
+      variantClassNames: {
+        isOpen: { true: "ojsd7iu", false: "ojsd7iv" },
+        isLoading: { true: "ojsd7iw" },
+      },
+      defaultVariants: {},
+      compoundVariants: [],
+    });
+  const GAe = ({
+    image: e,
+    type: t,
+    isVoice: n,
+    isOpen: a,
+    label: s,
+    onClick: l,
+    isLoading: d = !1,
+    isDisabled: f = !1,
+  }) => {
+    const h = t !== "label";
+    if (t !== "icon" && !!(s != null && s.length))
+      return ue.jsx(MAe, {
+        image: e,
+        label: s,
+        isOpen: a,
+        onClick: l,
+        isVoice: n,
+        withIcon: h,
+        isLoading: d,
+        isDisabled: f,
+      });
+    const E = !e && n;
+    return ue.jsx("div", {
+      className: UAe,
+      onClick: l,
+      children: ue.jsx(yu, {
+        className: Xt(
+          Zr.LAUNCHER,
+          BAe({ isOpen: a, isDisabled: f, isLoading: d })
+        ),
+        children: ue.jsxs("div", {
+          className: $Ae({ isOpen: a, withIcon: h }),
+          children: [
+            ue.jsx(EB, {
+              className: Xt(zAe({ isOpen: a, isLoading: d }), jAe()),
+            }),
+            d &&
+              ue.jsx(fI, { className: HAe, variant: "light", size: "large" }),
+            h &&
+              ue.jsxs(ue.Fragment, {
+                children: [
+                  E &&
+                    ue.jsx(AB, {
+                      className: Xt(_B({ isOpen: a, isLoading: d }), SB({})),
+                      fill: "white",
+                    }),
+                  !E &&
+                    ue.jsx("img", {
+                      src: e ?? yB,
+                      className: Xt(_B({ isOpen: a, isLoading: d }), SB({})),
+                      alt: "open chat",
+                    }),
+                ],
+              }),
+          ],
+        }),
+      }),
+    });
+  };
+  var qAe = tn({
+      defaultClassName: "_1xabf8x0",
+      variantClassNames: { side: { right: "_1xabf8x1", left: "_1xabf8x2" } },
+      defaultVariants: {},
+      compoundVariants: [],
+    }),
+    YAe = "_1xabf8x3",
+    WAe = "_1xabf8x4",
+    KAe = "_1xabf8x5",
+    XAe = "_1xabf8x6",
+    ZAe = "_1xabf8x7";
+  const QAe = ({ side: e, messages: t }) => {
+      const [n, a] = ge.useState(!1),
+        s = ge.useMemo(
+          () =>
+            t.map((d, f) =>
+              wm(d)
+                .with({ type: gs.TEXT }, ({ payload: h }) =>
+                  ue.jsx(
+                    "div",
+                    { className: Xt(YAe, v0), children: String(h.message) },
+                    f
+                  )
+                )
+                .otherwise(() => null)
+            ),
+          [t]
+        );
+      ge.useEffect(() => {
+        s.length && a(!1);
+      }, [s]);
+      const l = () => {
+        a(!0);
+      };
+      return s.length
+        ? ue.jsxs("div", {
+            className: Xt(Zr.PROACTIVE, qAe({ side: e }), n && ZAe),
+            children: [
+              ue.jsx(yu, {
+                round: !0,
+                className: KAe,
+                onClick: () => l(),
+                children: ue.jsx(td, { className: XAe, svg: "closeV2" }),
+              }),
+              ue.jsx("div", { className: WAe, children: s }),
+            ],
+          })
+        : null;
+    },
+    JAe = { mobile: "768px" },
+    Cu = {
+      IDLE: "IDLE",
+      INITIALIZING: "INITIALIZING",
+      LISTENING: "LISTENING",
+      TALKING: "TALKING",
+      ENDED: "ENDED",
+    };
+  var eTe = "_4vl0wk0";
+  const CB = ({ svg: e, className: t, ...n }) =>
+      ue.jsx(td, { svg: e, className: Xt(eTe, t), ...n }),
+    tTe = () => {
+      const [e, t] = ge.useState(0),
+        [n, a] = ge.useState(null);
+      return (
+        ge.useEffect(() => {
+          let s,
+            l,
+            d,
+            f = null;
+          return (
+            (async () => {
+              try {
+                const g = await navigator.mediaDevices.getUserMedia({
+                  audio: !0,
+                });
+                (s = new window.AudioContext()),
+                  a(s),
+                  (l = s.createAnalyser()),
+                  (l.fftSize = 256),
+                  (d = new Uint8Array(l.frequencyBinCount)),
+                  (f = s.createMediaStreamSource(g)),
+                  f.connect(l);
+                const E = () => {
+                  l.getByteTimeDomainData(d);
+                  const y =
+                      d.reduce((O, F) => O + Math.abs(F - 128), 0) / d.length,
+                    C = 1,
+                    I = y > 2 ? Math.max(0.66, C - y * 0.1) : C;
+                  t(I), requestAnimationFrame(E);
+                };
+                E();
+              } catch (g) {
+                console.error("Error accessing the microphone:", g);
+              }
+            })(),
+            () => {
+              f && f.disconnect(), s && s.close();
+            }
+          );
+        }, []),
+        e
+      );
+    };
+  var nTe = "_1g0fyo60",
+    rTe = tn({
+      defaultClassName: "_1g0fyo62",
+      variantClassNames: {
+        type: { full: "_1g0fyo63", expand: "_1g0fyo64", compact: "_1g0fyo65" },
+        isLoading: { true: "_1g0fyo66 _1g0fyo61" },
+      },
+      defaultVariants: {},
+      compoundVariants: [],
+    }),
+    aTe = tn({
+      defaultClassName: "_1g0fyo67",
+      variantClassNames: {
+        type: { full: "_1g0fyo68", expand: "_1g0fyo69", compact: "_1g0fyo6a" },
+      },
+      defaultVariants: {},
+      compoundVariants: [],
+    }),
+    iTe = "_1g0fyo6b",
+    oTe = tn({
+      defaultClassName: "_1g0fyo6c",
+      variantClassNames: {
+        type: { full: "_1g0fyo6d", expand: "_1g0fyo6e", compact: "_1g0fyo6f" },
+      },
+      defaultVariants: {},
+      compoundVariants: [],
+    }),
+    sTe = tn({
+      defaultClassName: "_1g0fyo6g",
+      variantClassNames: {
+        type: { full: "_1g0fyo6h", expand: "_1g0fyo6i", compact: "_1g0fyo6j" },
+      },
+      defaultVariants: {},
+      compoundVariants: [],
+    }),
+    uTe = "_1g0fyo6k",
+    RB = tn({
+      defaultClassName: "_1g0fyo6l",
+      variantClassNames: {
+        isVisible: { true: "_1g0fyo6m", false: "_1g0fyo6n" },
+      },
+      defaultVariants: {},
+      compoundVariants: [],
+    }),
+    NB = "_1g0fyo6o",
+    lTe = "_1g0fyo6p",
+    cTe = "_1g0fyo6q",
+    dTe = "_1g0fyo6r";
+  const fTe = ({
+      state: e,
+      settings: t,
+      footer: n,
+      onEndCall: a,
+      poweredBy: s,
+      isLoading: l,
+      onStartCall: d,
+    }) => {
+      const { content: f, renderMode: h = Rp.FULL } = t ?? {},
+        g = () => {
+          d == null || d();
+        },
+        E = () => {
+          a == null || a();
+        },
+        y = e === Cu.IDLE,
+        C = e === Cu.ENDED,
+        _ = e === Cu.TALKING,
+        I = e === Cu.LISTENING,
+        O = e === Cu.INITIALIZING,
+        F = _ || I || O,
+        z = () => {
+          l || (F ? E() : g());
+        },
+        L = () =>
+          y || C
+            ? (f == null ? void 0 : f.callToActionText) ?? "How can I help you?"
+            : O
+            ? "Connecting..."
+            : I
+            ? (f == null ? void 0 : f.listeningText) ?? "Listening..."
+            : (f == null ? void 0 : f.talkingText) ?? "Talk to interrupt",
+        M = tTe(),
+        B = h === Rp.COMPACT,
+        j = h === Rp.EXPAND,
+        D = ue.jsx(B4, {
+          isSmall: j,
+          className: lTe,
+          extraLinkUrl: n != null && n.enabled ? n.url : "",
+          extraLinkText: n != null && n.enabled ? n.text : "",
+          showPoweredBy: s,
+        });
+      return ue.jsxs("div", {
+        className: nTe,
+        children: [
+          ue.jsxs("div", {
+            className: rTe({ type: h, isLoading: l }),
+            children: [
+              ue.jsx("div", {
+                className: sTe({ type: h }),
+                children: ue.jsx("img", {
+                  src: (f == null ? void 0 : f.imageURL) || m0,
+                  alt: "agent brand image",
+                  style: { transform: I ? `scale(${M})` : "none" },
+                  className: uTe,
+                }),
+              }),
+              ue.jsxs("div", {
+                className: aTe({ type: h }),
+                children: [
+                  !B && ue.jsx("div", { className: iTe, children: L() }),
+                  ue.jsxs(yu, {
+                    onClick: z,
+                    variant: F ? Jl.SECONDARY : Jl.PRIMARY,
+                    className: oTe({ type: h }),
+                    children: [
+                      ue.jsx("div", {
+                        className: dTe,
+                        children: ue.jsx(fI, {
+                          className: cTe,
+                          variant: "light",
+                        }),
+                      }),
+                      ue.jsxs("span", {
+                        className: RB({ isVisible: F }),
+                        children: [
+                          ue.jsx(CB, { svg: "endCall" }),
+                          ue.jsx("div", {
+                            className: NB,
+                            children:
+                              (f == null ? void 0 : f.endButtonText) ?? "End",
+                          }),
+                        ],
+                      }),
+                      ue.jsxs("span", {
+                        className: RB({ isVisible: !F }),
+                        children: [
+                          ue.jsx(CB, { svg: "phone" }),
+                          ue.jsx("div", {
+                            className: NB,
+                            children:
+                              (f == null ? void 0 : f.startButtonText) ??
+                              "Start a call",
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+              j && D,
+            ],
+          }),
+          !j && D,
+        ],
+      });
+    },
+    pTe = (e) => {
+      const t = ge.useRef();
+      return t.current === void 0 && (t.current = e()), t.current;
+    };
+  class VTe {
+    constructor(t) {
+      (this.stopped = !1),
+        (this.mediaSource = null),
+        (this.lastMarkIndex = 0),
+        (this.lastSentMarkIndex = 0),
+        (this.queue = []),
+        (this.activeItem = null),
+        (this.sourceBuffer = null),
+        (this.onAudioWaiting = () => {
+          this.sendMark(), this.onListening();
+        }),
+        (this.onAudioStalled = () => {
+          this.sendMark(), this.onListening();
+        }),
+        (this.onAudioPlaying = () => {
+          this.onTalking();
+        }),
+        (this.onAudioEnded = () => {
+          this.onListening();
+        }),
+        (this.onMark = t.onMark),
+        (this.onTalking = t.onTalking),
+        (this.onListening = t.onListening),
+        (this.audio = new Audio()),
+        this.audio.addEventListener("ended", this.onAudioEnded),
+        this.audio.addEventListener("waiting", this.onAudioWaiting),
+        this.audio.addEventListener("stalled", this.onAudioStalled),
+        this.audio.addEventListener("playing", this.onAudioPlaying);
+    }
+    sendMark() {
+      this.lastMarkIndex !== this.lastSentMarkIndex &&
+        ((this.lastSentMarkIndex = this.lastMarkIndex),
+        this.onMark(this.lastMarkIndex));
+    }
+    base64ToArrayBuffer(t) {
+      const n = window.atob(t),
+        a = n.length,
+        s = new Uint8Array(a);
+      for (let l = 0; l < a; l++) s[l] = n.charCodeAt(l);
+      return s.buffer;
+    }
+    onBufferUpdated(t) {
+      (this.activeItem = null),
+        t > this.lastMarkIndex && (this.lastMarkIndex = t),
+        this.queue.length ? this.playQueue() : this.sendMark();
+    }
+    async updateSourceBuffer(t, n) {
+      var a, s, l;
+      await this.startAudio(),
+        (a = this.sourceBuffer) == null ||
+          a.addEventListener("error", () => this.onBufferUpdated(t), {
+            once: !0,
+          }),
+        (s = this.sourceBuffer) == null ||
+          s.addEventListener("updateend", () => this.onBufferUpdated(t), {
+            once: !0,
+          }),
+        (l = this.sourceBuffer) == null || l.appendBuffer(n);
+    }
+    async playQueue() {
+      this.stopped ||
+        this.activeItem ||
+        !this.queue.length ||
+        ((this.activeItem = this.queue.shift()),
+        this.updateSourceBuffer(
+          this.activeItem.markIndex,
+          this.activeItem.arrayBuffer
+        ));
+    }
+    addChunk(t, n) {
+      if (this.stopped) return;
+      const a = this.base64ToArrayBuffer(t);
+      this.queue.push({ markIndex: n, arrayBuffer: a }), this.playQueue();
+    }
+    stopAudio() {
+      var t, n, a;
+      this.stopped ||
+        ((t = this.sourceBuffer) == null || t.abort(),
+        (this.sourceBuffer = null),
+        ((n = this.mediaSource) == null ? void 0 : n.readyState) === "open" &&
+          ((a = this.mediaSource) == null || a.endOfStream()),
+        (this.mediaSource = null),
+        URL.revokeObjectURL(this.audio.src),
+        this.audio.pause(),
+        (this.audio.currentTime = 0),
+        (this.audio.src = ""));
+    }
+    startAudio() {
+      return this.stopped || this.mediaSource
+        ? Promise.resolve()
+        : new Promise((t) => {
+            const n = new MediaSource();
+            n.addEventListener(
+              "sourceopen",
+              () => {
+                (this.sourceBuffer = n.addSourceBuffer("audio/mpeg")), t();
+              },
+              { once: !0 }
+            ),
+              (this.audio.src = URL.createObjectURL(n)),
+              this.audio.play(),
+              (this.mediaSource = n);
+          });
+    }
+    interrupt() {
+      this.stopped ||
+        ((this.queue = []),
+        (this.activeItem = null),
+        this.stopAudio(),
+        this.sendMark(),
+        this.startAudio());
+    }
+    stop() {
+      this.stopAudio(),
+        (this.queue = []),
+        (this.stopped = !0),
+        (this.activeItem = null),
+        (this.lastMarkIndex = 0),
+        (this.lastSentMarkIndex = 0);
+    }
+  }
+  class mTe {
+    constructor(t) {
+      (this.onDataAvailable = t),
+        (this.mediaRecorder = null),
+        (this.inputAudioStream = null),
+        (this.createAudioStreamPromise = null),
+        (this.onMediaRecorderError = (n) => {
+          console.error("MediaRecorder error:", n.error);
+        }),
+        (this.onMediaRecorderDataAvailable = (n) => {
+          console.info("Got data:", n.data),
+            n.data.size > 0 && this.onDataAvailable(n.data);
+        });
+    }
+    createAudioStream() {
+      return this.createAudioStreamPromise
+        ? (console.info("Returning existing input audio stream promise."),
+          this.createAudioStreamPromise)
+        : this.inputAudioStream
+        ? Promise.resolve(this.inputAudioStream)
+        : ((this.createAudioStreamPromise = navigator.mediaDevices
+            .getUserMedia({ audio: !0 })
+            .catch((t) => {
+              throw (console.error("Microphone access denied.", t), t);
+            })
+            .finally(() => {
+              this.createAudioStreamPromise = null;
+            })),
+          this.createAudioStreamPromise);
+    }
+    async start() {
+      var t;
+      if (this.inputAudioStream) {
+        console.info("Audio stream already exists, reusing.");
+        return;
+      }
+      (this.inputAudioStream = await this.createAudioStream()),
+        console.info("Got audio stream:", this.inputAudioStream),
+        (this.mediaRecorder = new MediaRecorder(this.inputAudioStream)),
+        console.info("Got media recorder:", this.mediaRecorder),
+        this.mediaRecorder.addEventListener("error", this.onMediaRecorderError),
+        this.mediaRecorder.addEventListener(
+          "dataavailable",
+          this.onMediaRecorderDataAvailable
+        ),
+        (t = this.mediaRecorder) == null || t.start(1e3),
+        console.info("Started audio streaming...");
+    }
+    stop() {
+      var t, n, a, s, l;
+      ((t = this.mediaRecorder) == null ? void 0 : t.state) !== "inactive" &&
+        ((n = this.mediaRecorder) == null || n.stop()),
+        (a = this.inputAudioStream) == null ||
+          a.getTracks().forEach((d) => d.stop()),
+        (s = this.mediaRecorder) == null ||
+          s.removeEventListener("error", this.onMediaRecorderError),
+        (l = this.mediaRecorder) == null ||
+          l.removeEventListener(
+            "dataavailable",
+            this.onMediaRecorderDataAvailable
+          ),
+        (this.mediaRecorder = null),
+        (this.inputAudioStream = null),
+        console.info("Stopped audio streaming.");
+    }
+  }
+  class hTe {
+    constructor(t) {
+      (this.socket = null),
+        (this.connectionPromise = null),
+        (this.onSocketError = (n) => {
+          console.error("socket error:", n), this.onError(n), this.stop();
+        }),
+        (this.onSocketMessage = (n) => {
+          const a = JSON.parse(n.data);
+          console.info("socket message:", a), this.onMessage(a);
+        }),
+        (this.onSocketClose = () => {
+          this.onClose();
+        }),
+        (this.url = t.url),
+        (this.onError = t.onError),
+        (this.onMessage = t.onMessage),
+        (this.onClose = t.onClose ?? Pre);
+    }
+    createSocket() {
+      return this.connectionPromise
+        ? this.connectionPromise
+        : this.socket
+        ? Promise.resolve(this.socket)
+        : ((this.connectionPromise = new Promise((t, n) => {
+            const a = new WebSocket(this.url),
+              s = () => {
+                console.info("Socket connection established."), d(), t(a);
+              },
+              l = (f) => {
+                console.error("Socket connection error.", f), d(), n(f);
+              };
+            a.addEventListener("open", s), a.addEventListener("error", l);
+            const d = () => {
+              a == null || a.removeEventListener("open", s),
+                a == null || a.removeEventListener("error", l);
+            };
+          }).finally(() => {
+            this.connectionPromise = null;
+          })),
+          this.connectionPromise);
+    }
+    async start() {
+      if (this.socket) {
+        console.info("Socket already exists, reusing.");
+        return;
+      }
+      (this.socket = await this.createSocket()),
+        this.socket.addEventListener("error", this.onSocketError),
+        this.socket.addEventListener("message", this.onSocketMessage),
+        this.socket.addEventListener("close", this.onSocketClose);
+    }
+    stop() {
+      var t, n, a, s, l, d;
+      ((t = this.socket) == null ? void 0 : t.readyState) !==
+        WebSocket.CLOSED &&
+        ((n = this.socket) == null ? void 0 : n.readyState) !==
+          WebSocket.CLOSING &&
+        ((a = this.socket) == null || a.close()),
+        (s = this.socket) == null ||
+          s.removeEventListener("error", this.onSocketError),
+        (l = this.socket) == null ||
+          l.removeEventListener("message", this.onSocketMessage),
+        (d = this.socket) == null ||
+          d.removeEventListener("close", this.onSocketClose),
+        (this.socket = null);
+    }
+    send(t) {
+      if (!this.socket) {
+        console.warn("Socket is not open, cannot send message.");
+        return;
+      }
+      if (this.socket.readyState !== WebSocket.OPEN) {
+        console.warn("Socket is not open, cannot send message.");
+        return;
+      }
+      this.socket.send(t instanceof Blob ? t : JSON.stringify(t));
+    }
+  }
+  class gTe {
+    constructor({ url: t, userID: n, authorization: a, assistantID: s }) {
+      (this.state = Cu.IDLE),
+        (this.listeners = []),
+        (this.audio = null),
+        (this.onAudioMark = (l) => {
+          var d;
+          (d = this.socket) == null ||
+            d.send({ type: "mark", payload: { markIndex: l } });
+        }),
+        (this.onAudioTalking = () => {
+          this.updateState(Cu.TALKING);
+        }),
+        (this.onAudioListening = () => {
+          this.updateState(Cu.LISTENING);
+        }),
+        (this.onRecorderDataAvailable = (l) => {
+          this.socket.send(l);
+        }),
+        (this.onSocketError = () => {}),
+        (this.onSocketMessage = (l) => {
+          var d, f;
+          l.type === "audio"
+            ? (d = this.audio) == null ||
+              d.addChunk(l.payload.audio, l.payload.markIndex)
+            : l.type === "interrupt"
+            ? (f = this.audio) == null || f.interrupt()
+            : l.type === "end" &&
+              (console.info("Conversation ended by server.", "system"),
+              this.stop());
+        }),
+        (this.onSocketStop = () => {
+          this.stop();
+        }),
+        (this.updateState = (l) => {
+          this.state !== l &&
+            ((this.state = l), this.listeners.forEach((d) => d(l)));
+        }),
+        (this.startConversation = () => this.start()),
+        (this.endConversation = () => this.stop()),
+        (this.onStateUpdate = (l) => (
+          this.listeners.push(l),
+          () => {
+            this.listeners = this.listeners.filter((d) => d !== l);
+          }
+        )),
+        (this.userID = n ?? "test"),
+        (this.assistantID = s),
+        (this.authorization = a),
+        (this.socket = new hTe({
+          url: `${t}/voice/socket`,
+          onError: this.onSocketError,
+          onMessage: this.onSocketMessage,
+          onClose: this.onSocketStop,
+        })),
+        (this.recorder = new mTe(this.onRecorderDataAvailable));
+    }
+    async start() {
+      this.updateState(Cu.INITIALIZING),
+        (this.audio = new VTe({
+          onMark: this.onAudioMark,
+          onTalking: this.onAudioTalking,
+          onListening: this.onAudioListening,
+        })),
+        await this.socket.start(),
+        this.socket.send({
+          type: "start",
+          payload: {
+            ...(this.authorization && { authorization: this.authorization }),
+            userID: this.userID,
+            assistantID: this.assistantID,
+          },
+        }),
+        await this.recorder.start(),
+        this.updateState(Cu.LISTENING),
+        console.info("listening...");
+    }
+    stop() {
+      var t;
+      this.recorder.stop(),
+        this.socket.stop(),
+        (t = this.audio) == null || t.stop(),
+        this.updateState(Cu.ENDED);
+    }
+  }
+  const vTe = (e) => pTe(() => new gTe(e)),
+    bTe = ({ apiRef: e, isLoading: t = !1, onCallOverride: n }) => {
+      const { assistant: a, config: s } = ge.useContext(fl),
+        [l, d] = ge.useState(Cu.IDLE);
+      if (s.voice === void 0)
+        throw new Error("Voice is not configured in the config");
+      const f = vTe({
+        url: s.voice.url,
+        userID: s.userID,
+        assistantID: s.verify.projectID,
+        authorization: s.voice.authorization,
+      });
+      return (
+        ge.useImperativeHandle(e, () => f, [f]),
+        ge.useEffect(() => f.onStateUpdate((h) => d(h)), [f]),
+        ue.jsx(fTe, {
+          state: l,
+          footer: a.common.footerLink,
+          settings: a.voice,
+          poweredBy: a.common.poweredBy,
+          isLoading: t,
+          onEndCall: f.endConversation,
+          onStartCall: n ?? f.startConversation,
+        })
+      );
+    },
+    ETe = ({
+      shadowRoot: e,
+      chatAPI: t,
+      ready: n,
+      voiceApiRef: a,
+      isLauncherLoading: s,
+      isLauncherDisabled: l,
+      onVoiceCallOverride: d,
+    }) => {
+      const {
+          assistant: f,
+          open: h,
+          close: g,
+          interact: E,
+        } = ge.useContext(fl),
+        { isOpen: y } = ge.useContext(f0),
+        [C, _] = ge.useState(!1),
+        [I] = ge.useState([]),
+        O = () => window.matchMedia(`(max-width: ${JAe.mobile})`).matches,
+        [F, z] = ge.useState(O()),
+        L = f.type === vm.CHAT,
+        M = f.type === vm.VOICE,
+        B = f.type === vm.CHAT && f.chat.renderMode === Kg.POPOVER,
+        j =
+          M &&
+          (f.voice.renderMode === Rp.COMPACT || f.voice.renderMode === Rp.FULL);
+      ge.useLayoutEffect(() => {
+        j && h(), z(O());
+      }, [j]);
+      const D = vB(f),
+        K = () => {
+          _(!0), g();
+        },
+        ce = () => {
+          y ? g() : h();
+        };
+      E4(
+        t,
+        () => ({
+          open: h,
+          close: g,
+          hide: () => K(),
+          show: () => _(!1),
+          interact: E,
+          proactive: {
+            clear: () =>
+              console.info("This feature is not supported at the moment."),
+            push: () =>
+              console.info("This feature is not supported at the moment."),
+          },
+        }),
+        n
+      );
+      const fe = f.common.position,
+        Z = {
+          bottom: `${f.common.bottomSpacing}px`,
+          [fe]: `${f.common.sideSpacing}px`,
+        },
+        ae = f.common.launcher.type === "icon" ? PAe : FAe,
+        ie = `calc(100% - ${
+          ae + z4 + parseInt(f.common.bottomSpacing, 10) + 20
+        }px)`,
+        Ee = {
+          [fe]: Z[fe],
+          bottom: j ? Z.bottom : `${parseInt(Z.bottom, 10) + ae + z4}px`,
+          height: M ? "auto" : ie,
+        },
+        de = (F || B) && !M ? {} : Ee,
+        Ve = b4(f, e),
+        Ne = f.common.fontFamily,
+        Ae = Ne === "UCity Pro";
+      if (
+        (ge.useEffect(() => {
+          if (Ae) return;
+          const X = document.createElement("link"),
+            N = Ne.replace(/ /g, "+");
+          (X.href = `https://fonts.googleapis.com/css2?family=Open+Sans&display=swap`),
+            (X.rel = "stylesheet"),
+            document.head.appendChild(X);
+        }, [Ne]),
+        !Ve || !D)
+      )
+        return null;
+      const le = () => null;
+      return ue.jsxs("div", {
+        style: NS(g0, { colors: D, fontFamily: Ae ? wS : `'${Ne}'` }),
+        className: Xt(Zr.WIDGET, Bie({ withChat: y })),
+        children: [
+          !j &&
+            ue.jsxs("div", {
+              className: zie({ isHidden: C }),
+              style: Z,
+              children: [
+                ue.jsx(QAe, { side: fe, messages: I }),
+                ue.jsx(GAe, {
+                  type: f.common.launcher.type,
+                  image: f.common.launcher.imageURL,
+                  label: f.common.launcher.text,
+                  isOpen: y,
+                  isVoice: M,
+                  onClick: ce,
+                  isLoading: s,
+                  isDisabled: l,
+                }),
+              ],
+            }),
+          ue.jsx("div", {
+            onClick: () => g(),
+            onKeyDown: le,
+            className: jie({ visible: B && y }),
+          }),
+          ue.jsx("div", {
+            className: $ie({ isChat: L, popover: B, voice: M }),
+            style: de,
+            children: M
+              ? ue.jsx(bTe, { apiRef: a, isLoading: s, onCallOverride: d })
+              : ue.jsx(bB, { isMobile: F, isPopover: B }),
+          }),
+        ],
+      });
+    },
+    yTe = document.currentScript.src.replace("bundle.mjs", "style.css");
+  let $v;
+  const ATe = () => (($v = vb(g4)), { shadowRoot: g4, reactRoot: $v }),
+    TTe = (e) => {
+      try {
+        const t = e.attachShadow({ mode: "open" });
+        return ($v = vb(t)), { shadowRoot: t, reactRoot: $v };
+      } catch (t) {
+        throw (
+          (console.error(
+            `${t}. 
+Target:`,
+            e
+          ),
+          new Error("Failed to attach embedded chat to the provided target."))
+        );
+      }
+    },
+    STe = (e) => (e.render.mode === Mp.EMBEDDED ? TTe(e.render.target) : ATe()),
+    wB = yS(
+      (e) => `Method '${e}' will have no effect until 'load' has been called.`
+    );
+  window.voiceflow ?? (window.voiceflow = {}),
+    (OB = window.voiceflow).chat ??
+      (OB.chat = {
+        ...wB,
+        proactive: { ...wB.proactive },
+        load: async (e) => {
+          const t = ire.parse(e),
+            n = await Cre(t, Sre.parse(e.assistant ?? {})),
+            { reactRoot: a, shadowRoot: s } = STe(t);
+          await v4(yTe, s ?? document.head),
+            await new Promise((l) => {
+              var d, f;
+              a.render(
+                ue.jsxs(Xne, {
+                  assistant: n,
+                  config: t,
+                  children: [
+                    t.render.mode === Mp.EMBEDDED &&
+                      ue.jsx(CAe, {
+                        shadowRoot: s,
+                        chatAPI:
+                          (d = window.voiceflow) == null ? void 0 : d.chat,
+                        ready: l,
+                      }),
+                    t.render.mode === Mp.OVERLAY &&
+                      ue.jsx(ETe, {
+                        shadowRoot: s,
+                        chatAPI:
+                          (f = window.voiceflow) == null ? void 0 : f.chat,
+                        ready: l,
+                      }),
+                  ],
+                })
+              );
+            });
+        },
+        destroy: () => $v.render(null),
+      });
+})();
